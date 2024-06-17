@@ -21,6 +21,9 @@ jobs:
           - arch: x86_64
             sdk_url_path: https://downloads.openwrt.org/snapshots/targets/x86/64
             sdk_name: -sdk-x86-64_
+          - arch: armv8
+            sdk_urlpath: https://downloads.openwrt.org/snapshots/targets/armsr/armv8/
+            sdk_name: -sdk-armsr-armv8_
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
